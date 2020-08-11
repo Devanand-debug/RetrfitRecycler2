@@ -39,7 +39,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.AdapterViewHolder> {
     public void onBindViewHolder(@NonNull AdapterViewHolder holder, int position) {
 
         holder.name.setText(modles.get(position).getTitle());
-        holder.email.setText(modles.get(position).getTitle());
+        //holder.email.setText(modles.get(position).getTitle());
         Picasso.get().load(modles.get(position).getThumbnailUrl()).into(holder.imageView);
 
     }
@@ -57,7 +57,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.AdapterViewHolder> {
 
             imageView=itemView.findViewById(R.id.imageView);
             name=itemView.findViewById(R.id.name);
-            email=itemView.findViewById(R.id.email);
+            //email=itemView.findViewById(R.id.email);
 
         }
     }
